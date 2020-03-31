@@ -1,0 +1,301 @@
+body{
+    display: block;
+    width: 1360px;
+    background: #E5E5E5;
+    margin: 0 auto;
+    padding-top: 59px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    width: 1110px;
+    margin: 158px 0 0 0;
+    padding: 0;
+    background: #222222;
+    opacity: 0.2;
+    margin-left: 125px;
+}
+p{
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
+    color: #222222;
+}
+/* header */
+header, section{
+    width: 1110px;
+    padding-left: 125px;
+    
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navigation_list{
+    justify-content: space-between;
+}
+/* mainconent */
+.content{
+    margin-top: 126px;
+}
+.title{
+    width: 539px;
+    height: 140px;
+}
+.title h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    color: #222222;
+}
+
+.social{
+    width: 120px;
+    height: 24px;
+    align-self: flex-end;
+}
+
+.social i{
+    color:#222222;
+    opacity: 1;
+}
+
+.image{
+    margin-top: 86px;
+}
+.text{
+    margin-top: 43px;
+}
+.images{
+    margin-top: 135px;
+}
+.images img{
+    position: relative;
+    z-index: -1;
+}
+.images :first-child{
+    height: 65px;
+    width: 65px;
+    z-index: 1;
+    left: 550px;
+    top: 192px;
+}
+.box{
+    margin-top: 46px;
+}
+.desc{
+    width: 540px;
+    height: 87px;
+}
+
+.button{
+    background: #EF8E70;
+    width: 160px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.button a{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/* awards */
+.awards_logo{
+    margin-top: 10px;
+    width: 90px;
+    height: 10px;
+}
+.awards{
+    margin-top: 62px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.benefits h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+.discription h3{
+    margin: 0;
+    padding: 0;
+    width: 255px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.year{
+    width: 65px;
+    height: 28px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+ #awards{
+    width: 598px;
+    height: 312px;
+    flex-direction: column;
+ }
+.benefits{
+    width: 598px;
+    height: 129px;
+    justify-content: space-between;
+}
+
+.benefits:last-of-type{
+    margin-top: 54px;
+}
+
+.benefits>.title{
+    width: 190px;
+    height: 32px;
+}
+
+.discription{
+    width: 230px;
+    flex-direction: column;
+}
+
+.discription p{
+    margin-top: 13px;
+    height: 84px;
+}
+.clients_list{
+    background-color: #FAFAFA;;
+    height: 480px;
+    width: 1360px;
+    padding-left: 0;
+    justify-content: center;
+}
+.block{
+    margin-top: 122px;
+    margin-left: 125px;
+    padding-top: 102px;
+}
+.block .title{
+    width: 470px;
+    height: 49px;
+} 
+.block .title h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #222222;
+}
+
+.clients_list .discription{
+    width: 445px;
+    height: 92px;
+} 
+.logos{
+    margin-top: 73px;
+    margin-left: 125px;
+    height: 69px;
+}
+
+footer{
+    width: 1360px;
+    display: flex;
+    background-color: #515151;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 59px;
+    padding-bottom: 35px;
+}
+
+#footer_nav{
+    margin-top: 10px;
+    width: 729px;
+    height: 28px;
+}
+
+.navigation_list a{
+    color: #FFFFFF;
+}
+
+form{
+    width: 285px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background-color: #C6B393;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+input[type="email"]{
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+.bottom{
+    width: 357px;
+    height: 28px;
+    opacity: 0.4;
+}
+.list{
+    display:flex;
+    flex-direction: row;
+    width: 120px;
+    justify-content: space-between;
+}
+.submenu i{
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+footer hr{
+    margin-top: 41px;
+    margin-bottom: 37px;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}

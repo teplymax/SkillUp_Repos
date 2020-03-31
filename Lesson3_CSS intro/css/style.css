@@ -1,0 +1,25 @@
+div{
+    background: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+#item1{
+    color: yellow;
+}
+.box{
+    background: pink;
+}
+*{
+    color: indigo;
+}
+div:hover{
+    background: grey;
+}
+a:visited{
+    color: limegreen;
+}
+table, tr, td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+    
+}

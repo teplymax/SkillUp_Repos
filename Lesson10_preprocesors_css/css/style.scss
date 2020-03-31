@@ -1,0 +1,35 @@
+@mixin box_sizes ($box-height, $box-width) {
+    height: $box-height;
+    width: $box-width;
+    border: 2px solid grey;
+    // background-color: yellow;
+}
+@function set_color($color){
+    @return $color;
+}
+@for $i from 1 to 12 {
+    .col-lg-#{$i} {width: $i;}
+}
+// nav{
+//     ul{
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//     }
+    
+//     li{display:inline-block;}
+
+//     a{
+//         display: block;
+//         padding: 6px 12px;
+//         text-decoration: none;
+//     }
+// }
+div{
+    background-color: set_color(blue);
+    @include box_sizes(200px,200px);
+}
+p{
+    @include box_sizes(100px,100px);
+    background-color: set_color(green);
+}

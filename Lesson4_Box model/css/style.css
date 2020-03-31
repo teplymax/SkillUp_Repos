@@ -1,0 +1,53 @@
+/* div:hover{
+    background-color: brown;
+    border-radius: 50%;
+}
+[id=id1]{
+background-color: aqua;
+padding: 10px;
+
+}
+[class=box]{
+    background-color: grey;
+}
+[data-hr]{
+    color: red;
+}
+#id2::first-line{
+    background-color: green;
+}
+#id2::selection{
+    color: hotpink;
+}
+#id2::before{
+    content: "hello world";
+}
+.box{
+    border-width: 30px;
+    border-style: solid;
+    border-color: red green orange black;
+    height: 1px;
+    width: 1px;
+} */
+ div{
+    display:block;
+    width: 200 px;
+    height: 100 px;
+    background: red;
+    color: white;
+}
+#id1{
+    position: absolute;
+    background: yellow;
+    top: 30px;
+    left: 30px;
+    float: left;
+    width: 150px;
+    background-color: lightblue;
+}
+#two{
+position: relative;
+top: 20 px;
+left: 20 px;
+background: blue;
+}

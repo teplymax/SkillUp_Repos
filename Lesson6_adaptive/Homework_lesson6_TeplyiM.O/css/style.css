@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans|Raleway&display=swap');
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #23282F;
+}
+.container{
+    width: 1143px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../images/background_shape.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: 100px
+}
+.title{
+    height: 47px;
+}
+.title h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title span{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 252px;
+    padding: 0;
+    margin: 60px 0 60px 0;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 380px;
+    height: 97px;
+}
+.item .icon{
+    width: 71px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5eef0;
+}
+.icon:first-of-type{
+    background-color: #F7941D;
+}
+.item .text{
+    width: 283px;
+}
+.item .text h2{
+    margin: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.item .text p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #55595F;
+    margin: 0;
+}
+.button{
+    width: 165px;
+    height: 40px;
+    background-color: #29C2E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.button a{
+    text-decoration: none;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.5px;
+    line-height: 48px;
+    letter-spacing: 1.0875px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+@media only screen and (max-width:1220px)
+{
+    .list{
+        height: auto;
+        width: inherit;
+    }
+    .container{
+        width: inherit;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:850px)
+{
+    .container{
+        flex-direction: column;
+        margin: 0;
+    }
+    .list{
+        height: auto;
+        flex-direction: column;
+    }
+}

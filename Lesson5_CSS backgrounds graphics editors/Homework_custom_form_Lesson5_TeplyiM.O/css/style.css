@@ -1,0 +1,26 @@
+
+.input-checkbox{
+    display: none ;
+    position: absolute;
+}
+
+label{
+    padding-left: 25px;
+}
+.ch_label::before{
+content: "";
+display: block;
+width: 15px;
+height: 15px;
+position: absolute;
+top: 0;
+left: 0;
+background-color: #ebebeb;
+
+}
+div.cups{
+    margin-top: 500px;
+    width: inherit;
+    height: 640px;
+    background: url(../images/Coffee_left.png) no-repeat left center, url(../images/Tea_center.png) no-repeat center center, url(../images/milk_right.png) no-repeat right center, linear-gradient(to bottom, #c4cce0, #dde2ee);
+}

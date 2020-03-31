@@ -1,0 +1,18 @@
+table,td,th{
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+#sub{
+    text-align: center;
+}
+ form table{
+    border:  black solid 1px;
+    border-collapse: separate;
+} 
+form th{
+   background: #ccccff; 
+}
+
+#lbl{
+    vertical-align: top;
+}

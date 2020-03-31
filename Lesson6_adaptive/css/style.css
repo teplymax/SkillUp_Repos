@@ -1,0 +1,31 @@
+:root {
+    --g: grey;
+    --w: white;
+    }
+div{
+    background-color: greenyellow;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: visible;
+    color: var(--t);
+}
+img{
+    object-fit: fill;
+}
+p{
+    width: 150px;
+    height: 150px;
+}
+.first{
+    background-color: var(--w);
+}
+.second{
+    background-color: var(--g);
+}
+@media only screen and (min-width:200px) and (max-width:600px)
+{
+   div{
+       background-color: black;
+      } 
+}

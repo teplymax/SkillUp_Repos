@@ -1,0 +1,42 @@
+div{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    /* animation: anym 2s; */
+    animation-name: anym;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    /* box-shadow: 0 0 0 5px red, 0 0 0 10px green; */
+    /* transform: translate(120px, 50%); */
+    /* transition: width 2s; */
+}
+/* div:hover{ */
+    /* transform: scale(2,0.5);*/
+    /* transform: rotateZ(180deg); */
+    /* transform: skew(30deg, 20deg); */
+    /* transform-origin:left; */
+    /* width: 300px; */
+/* }  */
+/* @keyframes anym {
+    from {
+        background: red;
+      }
+      to {
+        background: green;
+      }
+    } */
+@keyframes anym { 
+      0% {
+        background: red;
+      }
+      50% {
+        background: green;
+      }
+      100% {
+        background: yellow;
+      }
+}

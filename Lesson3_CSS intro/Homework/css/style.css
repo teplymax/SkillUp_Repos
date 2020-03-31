@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    letter-spacing: 0.05em;
+    color: green;
+    text-align: justify;
+    line-height: 1.4rem;
+    font-size: 1.5rem;
+}
+.fa-youtube:hover{
+    size: 70px;
+color: #c4302b;
+}
+.fa-facebook-square:hover{
+color: #3b5998;
+}
+.fa-instagram-square:hover{
+    color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-pinterest:hover{
+color: #BD081C;
+}

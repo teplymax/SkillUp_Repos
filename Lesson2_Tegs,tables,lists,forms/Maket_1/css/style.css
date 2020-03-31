@@ -1,0 +1,51 @@
+body{
+    
+    background: radial-gradient(at top, #f3f8db, #4a6759);
+    
+}
+
+#conteiner{
+    margin: 50px auto 0 auto;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+}
+
+h1{
+    margin-bottom: 0px;
+    padding-top: 50px;
+    color: #5ddc79;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.input{
+    text-align: right;
+}
+
+#mail, #pas {
+    width: 268px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#sub{
+    background-color: #65ba5f;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    height: 30px;
+    width: 80px;
+}
+
+#submit{
+    text-align: center;
+}
+label{
+   padding-left: 20px;
+   color: #7f715a;
+   float: left;
+   margin-top: 37px;
+}
+
