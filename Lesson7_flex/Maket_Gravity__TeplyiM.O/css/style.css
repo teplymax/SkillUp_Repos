@@ -90,16 +90,15 @@ ul{
 .images{
     margin-top: 135px;
 }
-.images img{
-    position: relative;
-    z-index: -1;
+.images div{
+    width: 350px;
+    background-image: url(../images/ph3_workdetailes.jpg);
+    align-items: center;
+    justify-content: center;
 }
-.images :first-child{
+.images div img{
     height: 65px;
     width: 65px;
-    z-index: 1;
-    left: 550px;
-    top: 192px;
 }
 .box{
     margin-top: 46px;

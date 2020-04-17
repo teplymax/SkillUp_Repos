@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body{
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -11,6 +12,7 @@ body{
     background-image: url(../images/illustrationinner.png);
     background-position: right top;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 p{
