@@ -27,13 +27,10 @@
 // });
 
 //=======task2=========
-let currentX = 0,
-  currentY = 0;
+
 document.body.addEventListener("click", function (event) {
-  elem.style.left = `${event.clientX - currentX}px`;
-  elem.style.top = `${event.clientY - currentY}px`;
-  currentY = event.clientY;
-  currentX = event.clientX;
+  elem.style.left = `${event.clientX}px`;
+  elem.style.top = `${event.clientY}px`;
   console.log(event.clientX, event.clientY);
 });
 //========task3==================
