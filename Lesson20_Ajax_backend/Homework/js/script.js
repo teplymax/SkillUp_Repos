@@ -22,5 +22,12 @@ fetch(
     return response.json();
   })
   .then((data) => {
-    console.log(data.main.temp);
+    let newelem = document.createElement("div");
+    newelem.setAttribute("id", "weather");
+    newelem.innerHTML = `<span>${Math.floor(data.main.temp)}C</span>
+    <span>humidity:${Math.floor(data.main.humidity)}%</span>
+    <span>feels like:${Math.floor(data.main.feels_like)}C</span>
+    <span>Pressure:${Math.floor(data.main.pressure)}hPa</span>
+    ${data.weather[0].description}`;
+    document.body.append(newelem);
   });

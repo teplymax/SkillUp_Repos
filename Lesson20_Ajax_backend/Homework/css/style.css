@@ -1,0 +1,16 @@
+#weather {
+  background-color: blue;
+  height: 300px;
+  width: 400px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+span {
+  width: 200px;
+  height: fit-content;
+}
+span:first-of-type {
+  margin-left: 150px;
+}

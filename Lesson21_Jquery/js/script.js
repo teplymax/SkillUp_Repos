@@ -49,3 +49,20 @@ $(".slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+//========progressbar========
+let progressbar = document.createElement("div");
+$(progressbar).addClass("progressbar");
+$("body").append(progressbar);
+$(".progressbar").css({
+  backgroundColor: "red",
+  height: "5px",
+});
+
+for (let i = 0; i <= 100; i++) {
+  $(".progressbar").animate(
+    {
+      width: `${i}%`,
+    },
+    100
+  );
+}
