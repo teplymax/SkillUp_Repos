@@ -1,0 +1,11 @@
+<p>about works!</p>
+<!-- sum is {{ sum }}  -->
+<!-- sum={{ getSum() }} -->
+<div [class.special]="isSpecial" (click)="special()">wooooww</div>
+<button [style.color]="isSpecial ? 'red' : 'green'">sdfvzcs</button>
+<button (click)="isShow = true">Save</button>
+{{ getSum() }}
+
+<input #arg1 placeholder="arg1" />
+<input #arg2 placeholder="arg2" />
+<button (click)="getInputsSum(arg1.value, arg2.value)">Sum</button>
