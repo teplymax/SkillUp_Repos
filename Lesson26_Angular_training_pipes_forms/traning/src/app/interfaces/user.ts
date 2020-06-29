@@ -1,0 +1,1 @@
+export interface User { login: string, password: string, massage: string, checked: any }

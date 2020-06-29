@@ -1,0 +1,64 @@
+<h1>User Form!</h1>
+<div class="data">{{ userform.value | json }}</div>
+<form [formGroup]="userform">
+  <div class="form-group">
+    <label for="login">Login:</label>
+    <input
+      type="text"
+      class="form-control"
+      name="login"
+      id="login"
+      formControlName="login"
+      [class.is-invalid]="login.touched && login.invalid"
+    />
+    <small
+      class="text-danger"
+      *ngIf="login.errors?.required && login.touched && login.invalid"
+      >Enter your login</small
+    >
+    <small
+      class="text-danger"
+      *ngIf="login.errors?.email && login.touched && login.invalid"
+      >It must be in e-mail format</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="Password">Password:</label>
+    <input
+      [class.is-invalid]="password.touched && password.invalid"
+      formControlName="password"
+      type="password"
+      class="form-control"
+      name="password"
+      id="password"
+    />
+    <small
+      class="text-danger"
+      *ngIf="password.errors?.required && password.touched && password.invalid"
+      >Enter your password</small
+    >
+    <small
+      class="text-danger"
+      *ngIf="password.errors?.minlength && password.touched && password.invalid"
+      >Password must be 5 or more characters</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="massage">Your massage:</label>
+    <textarea
+      name="massage"
+      class="form-control"
+      id="massage"
+      cols="30"
+      rows="10"
+      formControlName="massage"
+    ></textarea>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="userform.invalid">
+    Submit
+  </button>
+</form>

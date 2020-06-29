@@ -1,0 +1,39 @@
+<p>myform works!</p>
+<div>email:{{ user.email }}</div>
+<div>My form</div>
+<form #regForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Enter email"
+      [(ngModel)]="user.email"
+      name="dsa"
+      required
+      #email="ngModel"
+      required
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+    />
+  </div>
+  <div [hidden]="email.valid" class="alert alert-danger">email is required</div>
+  <div class="form-group">
+    <input type="password" class="form-control" placeholder="Password" />
+  </div>
+  <div class="form-group">
+    <select id="select" class="form-control">
+      <option value="">Male</option>
+      <option value="">Female</option>
+    </select>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+    [disabled]="!regForm.form.valid"
+  >
+    Submit
+  </button>
+</form>

@@ -1,0 +1,59 @@
+<h1>User Form!</h1>
+<div class="data">{{ user | json }}</div>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="login">Login:</label>
+    <input
+      type="text"
+      class="form-control"
+      name="login"
+      id="login"
+      [(ngModel)]="user.login"
+      required
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+      #login="ngModel"
+      [class.is-invalid]="login.touched && !login.valid"
+    />
+    <small class="text-danger" [hidden]="!(login.touched && !login.valid)"
+      >Enter your login</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="Password">Password:</label>
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      id="password"
+      [(ngModel)]="user.password"
+      required
+      #password="ngModel"
+      [class.is-invalid]="password.touched && !password.valid"
+    />
+    <small class="text-danger" [hidden]="!(password.touched && !password.valid)"
+      >Enter your password</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="massage">Your massage:</label>
+    <textarea
+      name="massage"
+      class="form-control"
+      id="massage"
+      cols="30"
+      rows="10"
+      [(ngModel)]="user.massage"
+    ></textarea>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button
+    [disabled]="!userForm.form.valid"
+    type="submit"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+</form>

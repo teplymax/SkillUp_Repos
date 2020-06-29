@@ -1,0 +1,18 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 2px solid brown;
+  border-left: none;
+}
+li:first-of-type {
+  border-left: 2px solid brown;
+}

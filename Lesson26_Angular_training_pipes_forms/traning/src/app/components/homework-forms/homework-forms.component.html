@@ -1,0 +1,68 @@
+<div class="forms">
+    <div class="forms-toggle">
+        <button (click)="showLoginForm()" class="forms-toggle__btn btn">Login</button>
+        <button (click)="showRegisterForm()" class="forms-toggle__btn btn">Register</button>
+    </div>
+    <hr>
+    <form #loginForm="ngForm" *ngIf="formsToggle" class="form-horizontal">
+        {{loginFormData|json}}
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="text" name="login_email" class="form-control" placeholder="Username or email"
+                    required="required" value="" [(ngModel)]="loginFormData.username"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="password" name="login_password" class="form-control" placeholder="Password"
+                    required="required" [(ngModel)]="loginFormData.password"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+            <a href="#" class="pull-right">Forgot password?</a>
+        </div>
+        <input type="submit" value="Login" class="btn btn-success btn-custom" [disabled]="!loginForm.valid">
+
+    </form>
+
+    <form [formGroup]="registerFormData" *ngIf="!formsToggle" class="form-horizontal">
+        {{registerFormData.value|json}}
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="text" name="username" class="form-control" placeholder="Username" required="required"
+                    value="" formControlName="username">
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="text" name="fullname" class="form-control" placeholder="Full name" required="required"
+                    value="" formControlName="fullname">
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="email" name="register_email" class="form-control" placeholder="Email" required="required"
+                    value="" formControlName="email">
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="password" name="register_password" class="form-control" placeholder="Password"
+                    required="required" formControlName="password">
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="input-group">
+                <input type="password" name="register_cpassword" class="form-control" placeholder="Confirm Password"
+                    required="required" formControlName="confirmpassword">
+            </div>
+        </div>
+        <input type="submit" value="Register" class="btn btn-success btn-custom"
+            [disabled]="registerFormData.invalid || password.value!=confirmpassword.value">
+        {{password.value}}
+    </form>
+</div>

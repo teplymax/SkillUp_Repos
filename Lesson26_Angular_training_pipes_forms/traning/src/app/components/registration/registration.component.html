@@ -1,0 +1,34 @@
+<p>registration works!</p>
+<h1>User Form!</h1>
+<div class="data">{{ user | json }}</div>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="login">name:</label>
+        <input type="text" class="form-control" name="name" id="name" [(ngModel)]="user.name" required #name="ngModel"
+            [class.is-invalid]="name.touched && !name.valid" />
+        <small class="text-danger" [hidden]="!(name.touched && !name.valid)">Enter your name</small>
+    </div>
+    <div class="form-group">
+        <label for="login">Age:</label>
+        <input type="text" class="form-control" name="age" id="age" [(ngModel)]="user.age" required #age="ngModel"
+            [class.is-invalid]="age.touched && !age.valid" />
+        <small class="text-danger" [hidden]="!(age.touched && !age.valid)">Enter your age</small>
+    </div>
+    <div class="form-group">
+        <label for="login">Email:</label>
+        <input type="text" class="form-control" name="email" id="email" [(ngModel)]="user.email" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email="ngModel"
+            [class.is-invalid]="email.touched && !email.valid" />
+        <small class="text-danger" [hidden]="!(email.touched && !email.valid)">Enter your email</small>
+    </div>
+    <div class="form-group">
+        <label for="Password">Password:</label>
+        <input type="password" class="form-control" name="password" id="password" [(ngModel)]="user.password" required
+            #password="ngModel" [class.is-invalid]="password.touched && !password.valid" />
+        <small class="text-danger" [hidden]="!(password.touched && !password.valid)">Enter your password</small>
+    </div>
+
+    <button [disabled]="!userForm.form.valid" type="submit" class="btn btn-primary">
+        Submit
+    </button>
+</form>

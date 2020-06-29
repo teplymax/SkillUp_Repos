@@ -1,0 +1,13 @@
+<div>
+  {{ name }}
+</div>
+<div appShadow>
+  {{ age }}
+</div>
+<ul>
+  <li *ngFor="let item of arr">
+    <strong>{{ item.name }}</strong> <strong>{{ item.adge }}</strong>
+  </li>
+</ul>
+<div>{{ myfile | filesize }}</div>
+<div>{{ str | pUppercase }}</div>

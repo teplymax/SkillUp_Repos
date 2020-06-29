@@ -1,0 +1,11 @@
+<p>animation works!</p>
+<p>animation works!</p>
+<button (click)="toggle()" class="btn btn-secondary">Toggle</button>
+<p [@showHide]="isShow ? 'show': 'hide'">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro accusantium quae, amet enim rerum fuga nam
+    tenetur minima alias laudantium cum eligendi distinctio facere repellat placeat, rem ex debitis!
+</p>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users" @showItem>
+        {{ user.name }}</li>
+</ul>

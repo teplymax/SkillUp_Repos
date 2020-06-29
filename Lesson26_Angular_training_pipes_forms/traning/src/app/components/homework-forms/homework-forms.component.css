@@ -1,0 +1,13 @@
+.forms-toggle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn{
+    width: 50%;
+}
+.forms{
+    width: 25%;
+    min-width: 300px;
+    margin: 40px auto;
+}
